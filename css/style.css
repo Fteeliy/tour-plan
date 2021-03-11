@@ -1005,7 +1005,7 @@ template {
   }
   .hotel-info {
     max-width: 268px;
-    padding-bottom: 18px;
+    padding-bottom: 28px;
   }
   .hotel-info__rating {
     display: none;
