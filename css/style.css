@@ -871,7 +871,7 @@ template {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -905,7 +905,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slider {
     width: 590px;
   }
   .swiper-slide__image {
@@ -928,7 +928,7 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -940,6 +940,9 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .hotel {
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -965,6 +968,9 @@ template {
   .map {
     width: 340px;
   }
+  .newsletter-wrapper {
+    height: 65px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -982,6 +988,9 @@ template {
   .stars {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .hotel {
+    padding-bottom: 60px;
   }
   .hotel-wrapper {
     -webkit-box-pack: start;
@@ -1026,16 +1035,20 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
   .newsletter-wrapper {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     max-width: 700px;
     width: 92%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 65px;
   }
 }
 
@@ -1090,11 +1103,24 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
+  .newsletter-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .newsletter-title {
     margin-bottom: 37px;
   }
   .subscribe {
     width: 100%;
+    margin-left: 108px;
   }
 }
 
@@ -1112,6 +1138,7 @@ template {
   }
   .hotel {
     padding-top: 0;
+    padding-bottom: 40px;
   }
   .hotel-info {
     max-width: 268px;
@@ -1163,6 +1190,34 @@ template {
   }
   .map {
     height: 173px;
+  }
+  .newsletter {
+    height: 319px;
+  }
+  .newsletter-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .newsletter-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 37px;
+  }
+  .newsletter-title__strong {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
