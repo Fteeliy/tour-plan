@@ -18,6 +18,11 @@ img {
   max-width: 100%;
 }
 
+.map {
+  width: 340px;
+  height: 213px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -928,7 +933,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+    height: 450px;
   }
   .booking {
     width: 100%;
@@ -1034,6 +1039,9 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .hotel-right {
+    height: 403px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
