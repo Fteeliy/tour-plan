@@ -512,7 +512,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 14px;
   padding-bottom: 70px;
 }
 
@@ -540,7 +540,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
