@@ -823,6 +823,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-height: 260px;
 }
 
 .newsletter::before {
@@ -858,6 +859,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .newsletter-title__strong {
@@ -1108,6 +1110,8 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1116,8 +1120,8 @@ template {
     margin-bottom: 37px;
   }
   .subscribe {
-    width: 100%;
-    margin-left: 108px;
+    min-width: 280px;
+    bottom: 25px;
   }
 }
 
@@ -1216,6 +1220,7 @@ template {
   .subscribe {
     margin-left: 0;
     width: 280px;
+    bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
