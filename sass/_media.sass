@@ -33,7 +33,7 @@
     &__input
       width: 340px
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 56px
     &-grid
       flex-direction: column
     &__slider
@@ -47,12 +47,24 @@
   .map
     width: 340px
   .newsletter
+    padding: 98px 0 95px 0
     &-wrapper
       height: 65px
   .reviews
+    padding: 40px 0 70px 0
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
+      &__button
+        top: 50%
   .activities
     &-wrapper
       flex-wrap: wrap
@@ -61,6 +73,9 @@
   .card
     width: 340px
     height: 255px
+    &__title
+      max-width: 200px
+      text-align: left
 @media (max-width: 767px)
   .container
     max-width: 700px
@@ -105,13 +120,13 @@
     width: 100%
   .newsletter
     padding: 92px 0 93px 0
+    height: 260px
     &-wrapper
       flex-direction: row
       max-width: 700px
       width: 92%
       align-items: center
       height: 65px
-  .reviews
     &-slider
       &__item
         padding: 0 30px 30px
@@ -245,3 +260,11 @@
     bottom: 0
   .card
     width: 100%
+  .reviews
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 40px
