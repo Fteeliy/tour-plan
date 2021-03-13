@@ -47,9 +47,7 @@
   .map
     width: 340px
   .newsletter
-    padding: 98px 0 95px 0
-    &-wrapper
-      height: 65px
+    padding: 91px 0 95px 0
   .reviews
     padding: 40px 0 70px 0
     &__title
@@ -66,6 +64,7 @@
       &__button
         top: 50%
   .activities
+    padding: 51px 0 98px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -120,27 +119,26 @@
     width: 100%
   .newsletter
     padding: 92px 0 93px 0
-    height: 260px
     &-wrapper
       flex-direction: row
       max-width: 700px
       width: 92%
       align-items: center
-      height: 65px
+  .reviews
     &-slider
       &__item
         padding: 0 30px 30px
         &::after, &::before
           display: none
       &__button
-        top: 32px
+        top: 30px
         &--prev
           left: 50%
-          margin-left: -65px
+          margin-left: -94px
           transform: translate(-50%, 0)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -86px
           transform: translate(50%, 0)
   .activities
     padding-top: 40px
@@ -238,7 +236,12 @@
   .map
     height: 173px
   .newsletter
-    height: 319px
+    padding: 76px 0 85px 0
+    &-wrapper
+      width: 88%
+    &-title
+      &__strong
+        margin-top: 5px
     &-wrapper
       flex-direction: row
       flex-wrap: wrap
@@ -261,6 +264,12 @@
   .card
     width: 100%
   .reviews
+    &-slider
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
     &__title
       font-weight: bold
       font-size: 18px
@@ -268,3 +277,15 @@
       text-align: center
       text-transform: uppercase
       margin-bottom: 40px
+  .activities
+    padding-top: 27px
+    &__card
+      &--mb28
+        margin-bottom: 28px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      margin-bottom: 36px
