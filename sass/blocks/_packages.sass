@@ -1,0 +1,117 @@
+.packages
+  padding: 40px 0 70px 0
+  height: 1250px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 65px
+.grid
+  display: grid
+  height: 100vh
+  grid-template: 1fr 1fr / 1fr 1fr 1fr
+  grid-template-areas: "one one two" "three four five"
+  grid-row-gap: 30px
+  grid-column-gap: 30px
+  &-image
+    max-width: 350px
+    max-height: 250px
+    &__first
+      width: 366px
+      height: 100%
+  &__card
+    position: relative
+    max-width: 350px
+  &-content
+    width: 350px
+    padding: 30px 21px 25px 32px
+    background-color: $dark
+    color: $light
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 30px
+      &--first
+        color: $light
+        margin-bottom: 27px
+.room
+  max-width: 203px
+  &__content
+    margin-bottom: 11px
+    &--icon
+      width: 14px
+      height: 14px
+      margin-right: 13px
+    &--text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &__offer
+    position: absolute
+    left: 0
+    top: 26px
+  &__first
+    margin-bottom: 37px
+.old
+  &-price
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration: line-through
+    margin-top: 13px
+.price
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__real
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__booking
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    background-color: $primary
+    color: inherit
+    padding: 10px 26px
+    border: none
+.one
+  display: flex
+  grid-area: one
+  max-width: 730px
+.two
+  grid-area: two
+.three
+  grid-area: three
+.four
+  grid-area: four
+.five
+  grid-area: five
+.first
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+    max-width: 300px
+    margin-bottom: 34px
+  &__image
+    width: 366px
+    height: 505px
+  &__content
+    padding: 46px 21px 30px 43px
+    max-width: 364px
+    background-color: $dark
+    color: $light
+    max-height: 505px
+    &--rating
+      margin-bottom: 5px
