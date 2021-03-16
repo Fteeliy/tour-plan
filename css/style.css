@@ -851,19 +851,19 @@ template {
   grid-column-gap: 30px;
 }
 
-.grid-image {
+.grid__card {
+  position: relative;
+  max-width: 350px;
+}
+
+.grid__card__image {
   max-width: 350px;
   max-height: 250px;
 }
 
-.grid-image__first {
+.grid__card__first {
   width: 366px;
   height: 100%;
-}
-
-.grid__card {
-  position: relative;
-  max-width: 350px;
 }
 
 .grid-content {
@@ -881,11 +881,6 @@ template {
   margin-bottom: 30px;
 }
 
-.grid-content__title--first {
-  color: #FFFFFF;
-  margin-bottom: 27px;
-}
-
 .room {
   max-width: 203px;
 }
@@ -894,26 +889,26 @@ template {
   margin-bottom: 11px;
 }
 
-.room__content--icon {
+.room__content__icon {
   width: 14px;
   height: 14px;
   margin-right: 13px;
 }
 
-.room__content--text {
+.room__content__text {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
 }
 
-.room__offer {
+.room-offer {
   position: absolute;
   left: 0;
   top: 26px;
 }
 
-.room__first {
+.room-first {
   margin-bottom: 37px;
 }
 
@@ -991,7 +986,7 @@ template {
   grid-area: five;
 }
 
-.first__text {
+.first-text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1000,12 +995,12 @@ template {
   margin-bottom: 34px;
 }
 
-.first__image {
+.first-image {
   width: 366px;
   height: 505px;
 }
 
-.first__content {
+.first-content {
   padding: 46px 21px 30px 43px;
   max-width: 364px;
   background-color: #0A223D;
@@ -1013,7 +1008,17 @@ template {
   max-height: 505px;
 }
 
-.first__content--rating {
+.first-content__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+
+.first-content__rating {
   margin-bottom: 5px;
 }
 
@@ -1352,6 +1357,9 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .two, .five {
+    display: none;
+  }
   .card {
     width: 230px;
     height: 230px;
@@ -1526,6 +1534,9 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .packages {
+    display: none;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;

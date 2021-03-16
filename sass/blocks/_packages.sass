@@ -16,15 +16,15 @@
   grid-template-areas: "one one two" "three four five"
   grid-row-gap: 30px
   grid-column-gap: 30px
-  &-image
-    max-width: 350px
-    max-height: 250px
-    &__first
-      width: 366px
-      height: 100%
   &__card
     position: relative
     max-width: 350px
+    &__image
+      max-width: 350px
+      max-height: 250px
+    &__first
+      width: 366px
+      height: 100%
   &-content
     width: 350px
     padding: 30px 21px 25px 32px
@@ -36,27 +36,24 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 30px
-      &--first
-        color: $light
-        margin-bottom: 27px
 .room
   max-width: 203px
   &__content
     margin-bottom: 11px
-    &--icon
+    &__icon
       width: 14px
       height: 14px
       margin-right: 13px
-    &--text
+    &__text
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
-  &__offer
+  &-offer
     position: absolute
     left: 0
     top: 26px
-  &__first
+  &-first
     margin-bottom: 37px
 .old
   &-price
@@ -97,21 +94,29 @@
 .five
   grid-area: five
 .first
-  &__text
+  &-text
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160.6%
     max-width: 300px
     margin-bottom: 34px
-  &__image
+  &-image
     width: 366px
     height: 505px
-  &__content
+  &-content
     padding: 46px 21px 30px 43px
     max-width: 364px
     background-color: $dark
     color: $light
     max-height: 505px
-    &--rating
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 30px
+      color: $light
+      margin-bottom: 27px
+    &__rating
       margin-bottom: 5px
