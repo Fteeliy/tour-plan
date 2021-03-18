@@ -9,6 +9,7 @@
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
+    margin-bottom: 94px
   &__logo
     width: 166px
     grid-row: 1 / 3
@@ -85,7 +86,7 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
-    width: 539px
+    max-width: 539px
     height: 123px
     resize: none
   &__button
@@ -106,3 +107,22 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &-about
+    max-width: 696px
+    margin-left: auto
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__nav
+      display: flex
+      justify-content: space-between
+      flex-basis: 100%
+      max-width: 283px
+      &__item
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $light
+        text-decoration: none
