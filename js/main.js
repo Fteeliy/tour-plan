@@ -43,3 +43,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
             zoom: 15
         });
     }
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке Меню");
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
