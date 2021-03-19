@@ -429,7 +429,7 @@ template {
   line-height: 18px;
 }
 
-.navbar-menu__item--mobile_visible {
+.navbar-menu__item--mobile--visible {
   display: none;
 }
 
@@ -1770,15 +1770,15 @@ template {
   .logo {
     width: 133px;
   }
-  .navbar__search--mobile_hidden, .navbar__user--mobile_hidden {
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
   }
-  .navbar__search--mobile_visible, .navbar__user--mobile_visible {
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar--mobile_fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -1806,7 +1806,7 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item--mobile_visible {
+  .navbar-menu__item--mobile--visible {
     display: block;
   }
   .navbar__user {
