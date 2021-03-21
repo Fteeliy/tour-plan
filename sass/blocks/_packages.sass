@@ -1,6 +1,5 @@
 .packages
   padding: 40px 0 70px 0
-  height: 1250px
   &__title
     font-style: normal
     font-weight: bold
@@ -13,12 +12,14 @@
   display: grid
   height: 100vh
   grid-template: 1fr 1fr / 1fr 1fr 1fr
-  grid-template-areas: "one one two" "three four five"
   grid-row-gap: 30px
   grid-column-gap: 30px
   &__card
     position: relative
     max-width: 350px
+    min-height: 500px
+    overflow: hidden
+    border-radius: 8px
     &__image
       max-width: 350px
       max-height: 250px
@@ -26,7 +27,7 @@
       width: 366px
       height: 100%
   &-content
-    width: 350px
+    max-width: 350px
     padding: 30px 21px 25px 32px
     background-color: $dark
     color: $light
@@ -53,6 +54,7 @@
     position: absolute
     left: 0
     top: 26px
+    border-radius: 0 4px 4px 0
   &-first
     margin-bottom: 37px
 .old
@@ -83,16 +85,8 @@
     border: none
 .one
   display: flex
-  grid-area: one
   max-width: 730px
-.two
-  grid-area: two
-.three
-  grid-area: three
-.four
-  grid-area: four
-.five
-  grid-area: five
+  grid-column: 1 / 3
 .first
   &-text
     font-style: normal
