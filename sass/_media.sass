@@ -22,7 +22,8 @@
     &-wrapper
       grid-template-columns: 200px 200px 250px 150px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -57,10 +58,12 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    min-height: 2300px
   .grid
-    grid-template: 500px 500px/ 300px 300px
-    margin: auto
-    max-width: 630px
+    grid-template: 500px/ 350px
+    margin: 0 180px
+    max-width: 730px
   .newsletter
     padding: 91px 0 95px 0
   .reviews
@@ -99,7 +102,8 @@
     &__title
       margin-top: 10px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -232,10 +236,6 @@
       max-width: 700px
       width: 92%
       align-items: center
-  .grid
-    grid-template: 500px 500px/ 280px 280px
-    margin: auto
-    max-width: 590px
   .room
     &-offer
       margin-left: 0
@@ -263,7 +263,12 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
+  .modal
+    &__dialog
+      padding: 33px 50px
+      max-height: 487px
 @media (max-width: 740px)
   .menu
     &-button
@@ -296,11 +301,12 @@
   .grid
     grid-template-columns: 350px
     margin: auto
+    grid-row-gap: 20px
     max-width: 350px
     &__card
-      min-height: 300px
-  .three, .four
-    display: none
+      min-height: 500px
+      &__image
+        max-width: 350px
   .newsletter
     padding: 76px 0 83px 0
     &-wrapper
@@ -498,3 +504,14 @@
       font-weight: normal
       font-size: 12px
       line-height: 15px
+  .grid
+    grid-template-columns: 320px
+    grid-row-gap: 20px
+    margin: auto
+    margin-left: 0
+    max-width: 320px
+    margin-bottom: 20px
+    &__card
+      min-height: 500px
+      &__image
+        max-width: 320px
