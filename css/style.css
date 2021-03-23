@@ -23,7 +23,7 @@ img {
 }
 
 .grid__card__image img {
-  max-width: 110%;
+  max-width: 120%;
 }
 
 .map {
@@ -79,7 +79,7 @@ img {
   cursor: pointer;
 }
 
-.error {
+.invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
 }
@@ -2138,15 +2138,18 @@ template {
   .grid {
     -ms-grid-columns: 350px;
         grid-template-columns: 350px;
+    -ms-grid-rows: 500px;
+        grid-template-rows: 500px;
     margin: auto;
     grid-row-gap: 20px;
     max-width: 350px;
   }
   .grid__card {
-    min-height: 500px;
+    margin: auto;
+    max-width: 280px;
   }
   .grid__card__image {
-    max-width: 350px;
+    max-width: 280px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -2451,10 +2454,12 @@ template {
     margin-bottom: 20px;
   }
   .grid__card {
-    min-height: 500px;
+    height: 480px;
+    max-width: 280px;
+    margin: auto;
   }
   .grid__card__image {
-    max-width: 320px;
+    max-width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */

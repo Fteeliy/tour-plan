@@ -75,7 +75,9 @@ $(document).ready(function () {
   }
   // Обработка форм
   $('.form').each(function() {
-    $(this).validate({messages: {
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
     name: {
       required: "Please don't forget",
       minlength: "It's must be no less than 2 letters",
