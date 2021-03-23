@@ -79,7 +79,7 @@ img {
   cursor: pointer;
 }
 
-.invalid {
+.error {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
 }

@@ -76,17 +76,17 @@ $(document).ready(function () {
   // Обработка форм
   $('.form').each(function() {
     $(this).validate({messages: {
-    errorClass: "invalid",
     name: {
-      required: "Укажите имя",
-      minlength: "Имя должно быть не короче двух букв",
+      required: "Please don't forget",
+      minlength: "It's must be no less than 2 letters",
     },
     email: {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
-      required: "Телефон обязателен",
+      required: "The phone number is impossible",
+      minlength: "The phone number is incorrect",
     },
   }});
   });
