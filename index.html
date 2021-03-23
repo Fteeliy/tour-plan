@@ -866,11 +866,12 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  data-mask="+7(000) 000-00-00"
                 />
               </div>
               <div class="footer__input-group">
                 <input
-                  type="text"
+                  type="tel"
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
@@ -927,14 +928,15 @@
             minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
+            data-mask="+7(000) 000-00-00"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
@@ -968,14 +970,15 @@
             required
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
             required
+            data-mask="+7(000) 000-00-00"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
@@ -996,6 +999,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
