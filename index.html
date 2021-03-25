@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,7 +18,17 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=640329c6-5d2c-4522-9b0e-b66d5b851b80&lang=ru_RU"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/aos.js"></script>
+    <script defer src="js/main.js"></script>
+    <script
+      defer
+      src="https://api-maps.yandex.ru/2.1/?apikey=640329c6-5d2c-4522-9b0e-b66d5b851b80&lang=ru_RU"
+    ></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -60,7 +70,7 @@
             data-aos-delay="300"
           >
             <img
-              src="img/user-avatar.jpg"
+              src="img/user-avatar.webp"
               alt="Avatar: Nathan"
               class="user__avatar"
             />
@@ -191,35 +201,35 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-1.jpg"
+                  src="img/slide-1.webp"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-2.jpg"
+                  src="img/slide-2.webp"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-3.jpg"
+                  src="img/slide-3.webp"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-4.jpg"
+                  src="img/slide-4.webp"
                   alt="slide"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slide-5.jpg"
+                  src="img/slide-5.webp"
                   alt="slide"
                 />
               </div>
@@ -297,7 +307,7 @@
           <div class="grid__card one">
             <span class="offer room-offer">Flash Offer</span>
             <div class="grid__card__first">
-              <img src="img/grid-1.jpg" alt="Море" class="first-image" />
+              <img src="img/grid-1.webp" alt="Море" class="first-image" />
             </div>
             <div class="first-content">
               <div class="first-content__rating">
@@ -346,14 +356,20 @@
               <div class="old-price">$ 8,500</div>
               <div class="price">
                 <div class="price__real">$ 3,000</div>
-                <button class="price__booking">Book Now</button>
+                <button
+                  class="price__booking"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="grid__card two">
             <span class="offer room-offer">Flash Offer</span>
             <div class="grid__card__image">
-              <img src="img/grid-2.jpg" alt="Море" />
+              <img src="img/grid-2.webp" alt="Море" />
             </div>
             <div class="grid-content">
               <h3 class="grid-content__title">LUX* Belle Mare</h3>
@@ -388,14 +404,20 @@
               <div class="old-price">$ 8,500</div>
               <div class="price">
                 <div class="price__real">$ 3,000</div>
-                <button class="price__booking">Book Now</button>
+                <button
+                  class="price__booking"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="grid__card three">
             <span class="offer room-offer">Flash Offer</span>
             <div class="grid__card__image">
-              <img src="img/grid-3.jpg" alt="Отели" />
+              <img src="img/grid-3.webp" alt="Отели" />
             </div>
             <div class="grid-content">
               <h3 class="grid-content__title">White Palace</h3>
@@ -430,14 +452,20 @@
               <div class="old-price">$ 10,500</div>
               <div class="price">
                 <div class="price__real">$ 9,500</div>
-                <button class="price__booking">Book Now</button>
+                <button
+                  class="price__booking"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="grid__card four">
             <span class="offer room-offer">Flash Offer</span>
             <div class="grid__card__image">
-              <img src="img/grid-4.jpg" alt="Виллы" />
+              <img src="img/grid-4.webp" alt="Виллы" />
             </div>
             <div class="grid-content">
               <h3 class="grid-content__title">Luxury Place</h3>
@@ -472,14 +500,20 @@
               <div class="old-price">$ 4,500</div>
               <div class="price">
                 <div class="price__real">$ 2,500</div>
-                <button class="price__booking">Book Now</button>
+                <button
+                  class="price__booking"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="grid__card five">
             <span class="offer room-offer">Flash Offer</span>
             <div class="grid__card__image">
-              <img src="img/grid-5.jpg" alt="Пальмы" />
+              <img src="img/grid-5.webp" alt="Пальмы" />
             </div>
             <div class="grid-content">
               <h3 class="grid-content__title">Hotel Five Star</h3>
@@ -514,7 +548,13 @@
               <div class="old-price">$ 6,500</div>
               <div class="price">
                 <div class="price__real">$ 3,500</div>
-                <button class="price__booking">Book Now</button>
+                <button
+                  class="price__booking"
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -525,7 +565,7 @@
     <section
       class="newsletter parallax-window"
       data-parallax="scroll"
-      data-image-src="img/newsletter-bg.jpg"
+      data-image-src="img/newsletter-bg.webp"
     >
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title">
@@ -558,7 +598,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-avatar.jpg"
+                    src="img/reviews-avatar.webp"
                     alt="Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -593,7 +633,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-avatar-2.jpg"
+                    src="img/reviews-avatar-2.webp"
                     alt="Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -618,7 +658,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-avatar-3.jpg"
+                    src="img/reviews-avatar-3.webp"
                     alt="Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -665,7 +705,7 @@
             data-aos-delay="100"
           >
             <img
-              src="img/activity-1.jpg"
+              src="img/activity-1.webp"
               alt="The curious corner of chamarel"
               class="card__image"
             />
@@ -685,7 +725,7 @@
             data-aos-delay="300"
           >
             <img
-              src="img/activity-2.jpg"
+              src="img/activity-2.webp"
               alt="Gymkhana club golf course"
               class="card__image"
             />
@@ -705,7 +745,7 @@
             data-aos-delay="500"
           >
             <img
-              src="img/activity-3.jpg"
+              src="img/activity-3.webp"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
@@ -727,7 +767,7 @@
             data-aos-delay="700"
           >
             <img
-              src="img/activity-4.jpg"
+              src="img/activity-4.webp"
               alt="The blue marine discovery quest"
               class="card__image"
             />
