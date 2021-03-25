@@ -5,18 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="preload"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/parallax.min.js"></script>
@@ -25,10 +13,6 @@
     <script defer src="js/jquery.mask.min.js"></script>
     <script defer src="js/aos.js"></script>
     <script defer src="js/main.js"></script>
-    <script
-      defer
-      src="https://api-maps.yandex.ru/2.1/?apikey=640329c6-5d2c-4522-9b0e-b66d5b851b80&lang=ru_RU"
-    ></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -210,6 +194,7 @@
                   class="hotel-slider__image"
                   src="img/slide-2.webp"
                   alt="slide"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -217,6 +202,7 @@
                   class="hotel-slider__image"
                   src="img/slide-3.webp"
                   alt="slide"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -224,6 +210,7 @@
                   class="hotel-slider__image"
                   src="img/slide-4.webp"
                   alt="slide"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
@@ -231,6 +218,7 @@
                   class="hotel-slider__image"
                   src="img/slide-5.webp"
                   alt="slide"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -291,7 +279,16 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
+            <div class="map" id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5059.641001659799!2d98.29589422981788!3d7.836966282114166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1616695196078!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
@@ -1111,12 +1108,21 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      function asyncCSS(href) {
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = href;
+        document.head.appendChild(css);
+      }
+      asyncCSS(
+        "https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      );
+      asyncCSS(
+        "https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      );
+      asyncCSS("css/swiper-bundle.min.css");
+      asyncCSS("css/aos.css");
+    </script>
   </body>
 </html>

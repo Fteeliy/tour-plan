@@ -2,6 +2,8 @@ $(document).ready(function () {
   var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
+    preloadImages: false,
+    lazy: true,
     // Keyboard control
     keyboard: {
       enabled: true,
@@ -28,22 +30,6 @@ $(document).ready(function () {
       prevEl: '.reviews-slider__button--prev',
     },
   });
-  // Функция ymaps.ready() будет вызвана, когда
-  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-  ymaps.ready(init);
-  function init() {
-    // Создание карты.
-    var myMap = new ymaps.Map("map", {
-      // Координаты центра карты.
-      // Порядок по умолчанию: «широта, долгота».
-      // Чтобы не определять координаты центра карты вручную,
-      // воспользуйтесь инструментом Определение координат.
-      center: [7.838196, 98.298813],
-      // Уровень масштабирования. Допустимые значения:
-      // от 0 (весь мир) до 19.
-      zoom: 15
-    });
-  }
   var menuButton = $('.menu-button');
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
