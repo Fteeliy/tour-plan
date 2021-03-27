@@ -6,6 +6,8 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/parallax.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
@@ -79,7 +81,7 @@
                 class="user navbar__user navbar__user--mobile--visible"
               >
                 <img
-                  src="img/user-avatar.jpg"
+                  src="img/user-avatar.webp"
                   alt="Avatar: Nathan"
                   class="user__avatar"
                 />
@@ -138,7 +140,7 @@
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Flash Offers</a>
           </li>
-          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+          <li class="breadcrumb-list__item">Grand Hilton&nbsp;Hotel</li>
         </ul>
       </div>
       <!-- /.container -->
@@ -171,7 +173,9 @@
             class="rating hotel-info__rating"
           >
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter"
+              >4.5/<span class="rating__counter__five">5</span></span
+            >
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -434,7 +438,7 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div
-            class="card activities__card"
+            class="card activities__card activities__card--one"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -454,7 +458,7 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card activities__card--mb28"
+            class="card activities__card activities__card--mb28 activities__card--two"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -474,7 +478,7 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card--three"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -496,7 +500,7 @@
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card activities__card--four"
             data-aos="fade-up"
             data-aos-delay="700"
           >
@@ -524,7 +528,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <a
-            href="/"
+            href="index.html"
             class="logo footer__logo"
             data-aos="fade-up"
             data-aos-delay="100"
@@ -535,7 +539,9 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title-categories">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -601,11 +607,23 @@
           >
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/facebook.svg" alt="Icon: Facebook" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/youtube.svg" alt="Icon: YouTube" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.instagram.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/instagram.svg" alt="Icon: Instagram"
               /></a>
             </div>
@@ -657,7 +675,7 @@
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2">
+              <li class="footer__item footer__item--mb-2 footer__item--mb">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
@@ -665,12 +683,15 @@
                     alt="Icon: contact-phone call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday:
-                52&nbsp;-&nbsp;56-&nbsp;61&nbsp;-&nbsp;38 (08:00 am – 20:00 pm)
-                <br />
-                Tel (hotline) Sunday: 52&nbsp;-&nbsp;56&nbsp;-&nbsp;61&nbsp;-38
-                (08:00 am – 14:00 pm) <br />
+                <div class="footer__numbers">
+                  Tel (business hours) : <a href="tel:2691500">269 1500</a>
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
+                  <br />
+                  Tel (hotline) Sunday: <a href="tel:52566138"></a> (08:00 am –
+                  14:00 pm) <br />
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -680,7 +701,9 @@
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>

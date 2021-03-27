@@ -1,3 +1,6 @@
+@media (min-width: 1200px)
+  .footer-wrapper ul
+    margin-left: 0
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -20,6 +23,13 @@
     &__input
       &-group
         flex-basis: 100%
+@media (min-width: 992px)
+  a:hover
+    text-decoration: underline
+  button:hover
+    opacity: 0.5
+  button
+    cursor: pointer
 @media ( max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -92,6 +102,8 @@
     &__title
       margin-top: 5px
       margin-left: 0px
+      &-categories
+        margin-bottom: 21px
     &__input
       &-group
         flex-basis: 48%
@@ -122,6 +134,9 @@
         grid-column: span 5
         grid-row: 4
         max-width: 539px
+    &__text
+      margin-bottom: 20px
+      margin-left: -3px
     &__info
       margin-top: 18px
 @media (max-width: 767px)
@@ -154,7 +169,7 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 70px
       padding-top: 30px
       overflow: scroll
       &--visible
@@ -335,13 +350,19 @@
   .modal
     &__input
       font-size: 90%
+    &__info
+      order: 7
+    &__button
+      order: 8
 @media (max-width: 320px)
+  body
+    padding-top: 70px
   .container
     max-width: 280px
     margin: auto
   .navbar
     &-top
-      padding-top: 27px
+      padding-top: 23px
       padding-bottom: 29px
   .hotel
     padding-top: 0
@@ -362,6 +383,16 @@
         line-height: 30px
       &__description
         margin-top: 0
+    &-slider
+      &__button
+        width: 3px
+        height: 7px
+        &--next
+          right: 8px
+          background-image: url(../img/arrow-next.svg)
+        &--prev
+          left: 8px
+          background-image: url(../img/arrow-prev.svg)
     &-wrapper
       justify-content: space-between
       align-items: center
@@ -422,9 +453,6 @@
   .activities
     padding-top: 27px
     padding-bottom: 40px
-    &__card
-      &--mb28
-        margin-bottom: 28px
     &__title
       font-style: normal
       font-weight: bold
@@ -432,11 +460,21 @@
       line-height: 23px
       text-transform: uppercase
       margin-bottom: 36px
+    &__card
+      &--one
+        order: 1
+      &--two
+        order: 3
+        margin-top: 10px
+      &--three
+        order: 2
+      &--four
+        order: 4
   .footer
     padding-top: 65px
     &-wrapper
       grid-row-gap: 20px
-      margin-bottom: 33px
+      margin-bottom: 28px
     &__logo
       max-width: 104px
       margin-bottom: 15px
@@ -490,11 +528,18 @@
         margin-top: 12px
       &-form
         margin-bottom: 5px
+    &__item
+      &--mb
+        margin-bottom: 25px
+      &--mb-2
+        margin-left: 0
     &__text
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 160%
+    &__message
+      margin-bottom: 28px
     &__input, &__message
       font-style: normal
       font-weight: normal

@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=640329c6-5d2c-4522-9b0e-b66d5b851b80&lang=ru_RU"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery.validate.min.js"></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/aos.js"></script>
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a
+            href="index.html"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="img/horisontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -31,20 +33,30 @@
             />
           </a>
 
-          <form class="search navbar__search navbar__search--mobile--hidden">
+          <form
+            class="search navbar__search navbar__search--mobile--hidden form"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <input
               type="text"
               class="search__input"
               placeholder="Search Location_"
+              required
             />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <img
-              src="img/user-avatar.jpg"
+              src="img/user-avatar.webp"
               alt="Avatar: Nathan"
               class="user__avatar"
             />
@@ -69,7 +81,7 @@
                 class="user navbar__user navbar__user--mobile--visible"
               >
                 <img
-                  src="img/user-avatar.jpg"
+                  src="img/user-avatar.webp"
                   alt="Avatar: Nathan"
                   class="user__avatar"
                 />
@@ -78,12 +90,13 @@
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form
-                class="search navbar__search navbar__search--mobile--visible"
+                class="search navbar__search navbar__search--mobile--visible form"
               >
                 <input
                   type="text"
                   class="search__input"
                   placeholder="Search Location_"
+                  required
                 />
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
@@ -154,13 +167,21 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
+          <a
+            href="index.html"
             class="logo footer__logo"
-          />
-          <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            data-aos="fade-up"
+            data-aos-delay="100"
+            ><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan"
+          /></a>
+          <div
+            class="footer__list footer__categories"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="footer__title footer__title-categories">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -189,7 +210,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__list footer__additional">
+          <div
+            class="footer__list footer__additional"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -215,22 +240,42 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__social-network">
+          <div
+            class="footer__social-network"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/facebook.svg" alt="Icon: Facebook" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.youtube.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/youtube.svg" alt="Icon: YouTube" /></a
-              ><a href="#" class="footer__link"
+              ><a
+                href="https://www.instagram.com/"
+                class="footer__link"
+                target="_blank"
+                rel="nofollow noopener"
                 ><img src="img/instagram.svg" alt="Icon: Instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="footer__title">LEGAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions</a>
@@ -247,7 +292,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <h3 class="footer__title footer__title--mb-3 footer__title--mt-3">
               Contact Details
             </h3>
@@ -266,7 +315,7 @@
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                 States
               </li>
-              <li class="footer__item footer__item--mb-2">
+              <li class="footer__item footer__item--mb-2 footer__item--mb">
                 <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
@@ -274,10 +323,15 @@
                     alt="Icon: contact-phone call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br />
+                <div class="footer__numbers">
+                  Tel (business hours) : <a href="tel:2691500">269 1500</a>
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
+                  <br />
+                  Tel (hotline) Sunday: <a href="tel:52566138"></a> (08:00 am –
+                  14:00 pm) <br />
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -287,26 +341,43 @@
                     alt="Icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+          <div
+            class="footer__contact-form"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <h3 class="footer__title footer__title--mb-3 footer__title--mt">
+              Send us a message
+            </h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  data-mask="+7(000) 000-00-00"
+                  minlength="17"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"

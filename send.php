@@ -39,7 +39,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'yallterkinggch@gmail.com'; // Логин на почте
-    $mail->Password   = 'password1029test'; // Пароль на почте
+    $mail->Password   = '567210489yallterking'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('yallterkinggch@gmail.com', 'ИКТ-13 Владимир Веселов'); // Адрес самой почты и имя отправителя
